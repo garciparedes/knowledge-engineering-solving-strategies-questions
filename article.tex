@@ -64,11 +64,22 @@
 		\subsection{Definir la subsunción en lógica de primer orden e indicar cuándo se aplica la estrategia de eliminación de cláusulas subsumidas.}
 
 			\paragraph{}
+			Se denomina ligadura al par ordenado termino/variable y se interpreta diciendo que el término substituye las ocurrencias de la variable.
+
+			\paragraph{}
+			Se denomina substitución, s, a un conjunto finito de ligaduras con la restricción de que una variable no puede aparecer más de una vez ni en una ligadura ni en el conjunto de todas ellas.
+
+			\paragraph{}
+			Se dice que una clausula $k_1$  subsume a otra clausuala $k_2$ si y sólo si existe una substitución $s/k_1$ tal que s está contenido en $k_2$
+
+			\paragraph{}
+			La estrategia de eliminación de clausulas subsumidas es un método de simplificación que se puede aplicar en cada paso del proceso de resolución para así hacerlo mucho más eficiente.
 
 
 		\subsection{?`Cuál es la intuición en la que se apoya la estrategia del conjunto soporte?}
 
 			\paragraph{}
+			La intuición en la que se apoya la estrategia del conjunto soporte es la drástica reducción del espacio de búsqueda aplicando la restricción de que cada resolución sea una combinación de una cláusula del conjunto soporte y con otra sentencia y añadiendo la resolvente a dicho conjunto soporte. Si se seleción bien el conjunto soporte inicial esta estrategia es completa. Un enfoque habitual es seleccionar la clausula del teorema como conjunto soporte inicial.
 
 
 		\subsection{A qué tipo de búsqueda da lugar la estrategia de resolución lineal:}
