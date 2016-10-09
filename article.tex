@@ -85,21 +85,24 @@
 		\subsection{A qué tipo de búsqueda da lugar la estrategia de resolución lineal:}
 
 			\begin{enumerate}[label=\Alph*)]
-				\item Primero en profundidad
+				\item \textbf{Primero en profundidad}
 				\item Primero en anchura
 				\item Ninguna de las anteriores
 			\end{enumerate}
 
 			\paragraph{}
+			La estrategia de resolución lineal da lugar a una búsqueda primero en profundidad entre la Base de Conocimiento. La causa está originada por la restricción que implica que una resolución debe estar formada por una cláusula cualquiera y última resolvente. Esto hace que se genere una búsqueda primero en profundidad hacia la clausula vacía.
 
 
 		\subsection{Indicar si la resolución lineal es completa utilizada con un procedimiento de extracción de respuesta sujeto a la restricción de que la pregunta es una conjunción de literales y todas las variables están cuantificadas existencialmente, con todos los cuantificadores al comienzo de la fórmula.}
 			\paragraph{}
+			Si que lo es dado que al negar el teorema(pregunta) este se convierte en una disyunción de literales negados todos ellos de forma universal, por lo tanto esto se puede utilizar como clausula central inicial, lo que resulta en una estrategia completa.
 
 
 		\subsection{?`Es necesaria la presencia de una cláusula unitaria en un conjunto de cláusulas para que exista una refutación por entrada?}
 
 			\paragraph{}
+			Si que lo es. La demostración se puede llevar a cabo debido a la equivalencia con la estrategia de resolución unitaria. Esta estrategia requiere que una de las cláusulas utilizadas en cada resolución sea unitaria, por lo tanto obliga a que al menos una de las del conjunto inicial sea unitaria.
 
 
 	\section{Problemas}
