@@ -60,28 +60,6 @@
 
 	\section{Cuestiones}
 
-
-		\subsection{Definir la subsunción en lógica de primer orden e indicar cuándo se aplica la estrategia de eliminación de cláusulas subsumidas.}
-
-			\paragraph{}
-			Se denomina ligadura al par ordenado termino/variable y se interpreta diciendo que el término substituye las ocurrencias de la variable.
-
-			\paragraph{}
-			Se denomina substitución, s, a un conjunto finito de ligaduras con la restricción de que una variable no puede aparecer más de una vez ni en una ligadura ni en el conjunto de todas ellas.
-
-			\paragraph{}
-			Se dice que una clausula $k_1$  subsume a otra clausuala $k_2$ si y sólo si existe una substitución $s/k_1$ tal que s está contenido en $k_2$
-
-			\paragraph{}
-			La estrategia de eliminación de clausulas subsumidas es un método de simplificación que se puede aplicar en cada paso del proceso de resolución para así hacerlo mucho más eficiente.
-
-
-		\subsection{?`Cuál es la intuición en la que se apoya la estrategia del conjunto soporte?}
-
-			\paragraph{}
-			La intuición en la que se apoya la estrategia del conjunto soporte es la drástica reducción del espacio de búsqueda aplicando la restricción de que cada resolución sea una combinación de una cláusula del conjunto soporte y con otra sentencia y añadiendo la resolvente a dicho conjunto soporte. Si se seleción bien el conjunto soporte inicial esta estrategia es completa. Un enfoque habitual es seleccionar la clausula del teorema como conjunto soporte inicial.
-
-
 		\subsection{A qué tipo de búsqueda da lugar la estrategia de resolución lineal:}
 
 			\begin{enumerate}[label=\Alph*)]
@@ -91,12 +69,7 @@
 			\end{enumerate}
 
 			\paragraph{}
-			La estrategia de resolución lineal da lugar a una búsqueda primero en profundidad entre la Base de Conocimiento. La causa está originada por la restricción que implica que una resolución debe estar formada por una cláusula cualquiera y última resolvente. Esto hace que se genere una búsqueda primero en profundidad hacia la clausula vacía.
-
-
-		\subsection{Indicar si la resolución lineal es completa utilizada con un procedimiento de extracción de respuesta sujeto a la restricción de que la pregunta es una conjunción de literales y todas las variables están cuantificadas existencialmente, con todos los cuantificadores al comienzo de la fórmula.}
-			\paragraph{}
-			Si que lo es dado que al negar el teorema(pregunta) este se convierte en una disyunción de literales negados todos ellos de forma universal, por lo tanto esto se puede utilizar como clausula central inicial, lo que resulta en una estrategia completa.
+			La estrategia de resolución lineal da lugar a una búsqueda primero en profundidad entre las cláusulas que forman la Base de Conocimiento. La causa está originada por la restricción que implica que una resolución debe estar formada por una cláusula cualquiera y la última resolvente obtenida. Esto hace que se genere una búsqueda primero en profundidad hacia la clausula vacía.
 
 
 		\subsection{?`Es necesaria la presencia de una cláusula unitaria en un conjunto de cláusulas para que exista una refutación por entrada?}
@@ -107,27 +80,12 @@
 
 	\section{Problemas}
 
-		\subsection{Sea S el conjunto de cláusulas $ \{ P(x) \lor Q(x), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. Obtener una derivación de la cláusula vacía a partir de S utilizando la estrategia de saturación por niveles.}
-
-			\paragraph{}
-
-
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(x), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ¿Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
 
 			\paragraph{}
 
 
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(B), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ¿Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
-
-			\paragraph{}
-
-
-		\subsection{Demostrar que los ángulos interiores alternos formados por la diagonal de un trapecio son iguales, sabiendo que los ángulos interiores alternos de dos paralelas son iguales.}
-
-			\paragraph{}
-
-
-		\subsection{Indicar qué ocurre al aplicar saturación por niveles al siguiente conjunto de cláusulas: $ \{ P(A), \lnot P(x) \lor P(f(x)) \} $.}
 
 			\paragraph{}
 
