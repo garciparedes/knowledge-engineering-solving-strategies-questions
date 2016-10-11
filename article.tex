@@ -84,7 +84,9 @@
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(x), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ?`Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
 
 			\paragraph{}
-			Para probar si el conjunto de cláusulas S es inconsistente podemos apoyarnos en alguna estrategia de resolución que sea completa. Si se consigue llegar a la cláusula vacía entonces podemos confirmar que el conjunto S es inconsistente. Para ello utilizaremos la estrategia de Resolucion Lineal seleccionando la primera como $Kc_0$. Puesto que en esta variación de la resolución lineal no queremos probar un teorema sino demostrar que S es inconsistente debemos utilizar obligatoriamente todas las cláusulas del conjunto S. Dado que hemos llegado a la cláusula vacía podemos asegurar que S es inconsistente.
+			Para probar si el conjunto $S$ de cláusulas es inconsistente podemos apoyarnos en el teorema de completitud por entradas, puesto que todas las clausulas de $S$ son de Horn. Debido a su equivalencia con la estrategia de resolución unitaria este teorema también es válido con dicho mecanismo. Por lo tanto si conseguimos encontrar un conjunto de derivaciones utilizando todas las cláusulas del conjunto $S$ que nos lleven a cláusula vacía habremos demostrado la inconsistencia de $S$.
+
+			Puesto que en este caso hemos llegado a la cláusula vacía podemos asegurar que \textbf{S es inconsistente}.
 
 			\includegraphics[width=\textwidth]{problem-1-resolution}
 
@@ -92,7 +94,7 @@
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(B), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ?`Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
 
 			\paragraph{}
-			Siguiendo el mismo razonamiento que en el ejercicio anterior, es trivial ver que S no es inconsistente dado que existen dos constantes en el conjunto de cláusulas, por lo que no podremos obtener nunca una resolvente vacía de dicho conjunto.
+			Siguiendo el mismo razonamiento que en el ejercicio anterior, \textbf{$S$ no es inconsistente} dado que no podemos llegar a cláusula vacía mediante un conjunto de derivaciones, dado que existen dos constantes en el conjunto de cláusulas que lo impiden.
 
 
 \end{document}
