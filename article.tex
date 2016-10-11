@@ -78,16 +78,21 @@
 			\textbf{Si} que lo es. La demostración se puede llevar a cabo apoyandose en la equivalencia con la estrategia de resolución unitaria. Esta estrategia requiere que una de las cláusulas utilizadas en cada resolución sea unitaria, por lo tanto implica la necesidad de existencia de al menos una de las cláusulas del conjunto inicial sea unitaria.
 
 
+	\newpage
 	\section{Problemas}
 
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(x), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ?`Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
 
 			\paragraph{}
+			Para probar si el conjunto de cláusulas S es inconsistente podemos apoyarnos en alguna estrategia de resolución que sea completa. Si se consigue llegar a la cláusula vacía entonces podemos confirmar que el conjunto S es inconsistente. Para ello utilizaremos la estrategia de Resolucion Lineal seleccionando la primera como $Kc_0$. Puesto que en esta variación de la resolución lineal no queremos probar un teorema sino demostrar que S es inconsistente debemos utilizar obligatoriamente todas las cláusulas del conjunto S. Dado que hemos llegado a la cláusula vacía podemos asegurar que S es inconsistente.
+
+			\includegraphics[width=\textwidth]{problem-1-resolution}
 
 
 		\subsection{Sea S el conjunto de cláusulas $ \{ P(B), \lnot P(A) \lor Q(A), P(x) \lor \lnot Q(x), \lnot P(x) \lor \lnot Q(x) \} $. ?`Es inconsistente el conjunto de cláusulas S? ?`Por qué?}
 
 			\paragraph{}
+			Siguiendo el mismo razonamiento que en el ejercicio anterior, es trivial ver que S no es inconsistente dado que existen dos constantes en el conjunto de cláusulas, por lo que no podremos obtener nunca una resolvente vacía de dicho conjunto.
 
 
 \end{document}
